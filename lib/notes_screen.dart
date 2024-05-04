@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:notes/assets/drawer.dart';
 import 'package:notes/assets/notes.dart';
 import 'package:notes/assets/notes_database.dart';
 import 'package:provider/provider.dart';
@@ -89,7 +90,7 @@ class _notesScreenState extends State<notesScreen> {
           onPressed: addNote,
           child: const Icon(Icons.add),
         ),
-        drawer: Drawer(),
+        drawer: SideDrawer(),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
