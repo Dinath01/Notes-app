@@ -14,7 +14,7 @@ ThemeData darkMode = ThemeData(
   brightness: Brightness.dark,
   colorScheme: ColorScheme.dark(
     background: Colors.grey.shade900,
-    primary: Color.fromARGB(255, 34, 34, 34),
+    primary: Color.fromARGB(255, 50, 50, 50),
     secondary: const Color.fromARGB(255, 58, 58, 58),
     inversePrimary: Colors.grey.shade300,
   )

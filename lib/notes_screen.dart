@@ -100,7 +100,7 @@ class _notesScreenState extends State<notesScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 25.0),
+              padding: const EdgeInsets.only(top: 25.0, left: 25.0),
               child: Text(
                 "Notes",
                 style: TextStyle(
