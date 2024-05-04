@@ -11,13 +11,13 @@ void main() async {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(
       create: (context) => NotesDB(),
-      child: const MyApp(),
     ),
     ChangeNotifierProvider(
       create: (context) => ThemeSet(),
-      child: const MyApp(),
     )
-  ]));
+  ],
+  child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -26,9 +26,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: notesScreen(),
+      home: const notesScreen(),
+      theme: Provider.of<ThemeSet>(context).themeData,
     );
   }
 }
